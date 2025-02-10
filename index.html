@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Layout</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Music Shower</h1>
+    </header>
+
+    <nav>
+        <!-- Sidebar Button on the Left -->
+        <button class="open-btn">☰</button>
+
+        <!-- Centered Nav Links -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Cart on the Right -->
+        <a class="cart-link header-link cart-container" href="checkout.html">
+            <img class="cart-icon" src="images/cart.png">
+            <div class="cart-quantity js-cart-quantity">0</div>
+            <div class="cart-text">Cart</div>
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content js-main-content">
+            <!-- Sidebar button moved to the nav bar, removed from here -->
+        </div>
+        
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn">X</button>
+            <h2>Sidebar</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Music Shower. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
