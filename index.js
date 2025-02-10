@@ -1,8 +1,22 @@
 import {shows} from './shows.js';
 import {cart, addToCart} from './cart.js';
 
-export function toggleSidebar(){
-  document.getElementById("sidebar").classList.toggle("active");
+function toggleSidebar(){
+
+const sidebar = document.getElementById('sidebar');
+const closebtn = document.querySelector('.close-btn')
+const openbtn = document.querySelector('.open-btn');
+
+sidebar.classList.toggle("active");
+
+if(sidebar.classList.contains("active")){
+  openbtn.style.display = "none";
+  closebtn.style.display = "block";
+}
+else{
+  openbtn.style.display = "block";
+  closebtn.style.display = "none";
+}
 }
 
 document.querySelector('.open-btn').addEventListener('click', toggleSidebar);
@@ -22,7 +36,7 @@ shows.forEach((show)=>{
           </div>
 
           <div class="show-price">
-            ${(show.ticketPrice)}
+            Rs.${(show.ticketPrice)}
           </div>
 
           <div class="show-quantity-container">

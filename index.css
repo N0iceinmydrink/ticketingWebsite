@@ -1,13 +1,17 @@
+/* General Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
 }
 
+/* Header and Navigation Styling */
 header {
     background: #333;
     color: white;
@@ -35,11 +39,12 @@ nav a {
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #075d32;
-    transform: unset;
 }
 
 .cart-container {
@@ -60,10 +65,68 @@ nav a:hover{
     font-weight: bold;
 }
 
+/* Sidebar Styles */
+.sidebar {
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: -320px;
+    height: 100%;
+    background: #2c3e50;
+    transition: 0.3s ease-in-out;
+    color: white;
+    padding: 30px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.close-btn:hover {
+    background-color: #e74c3c;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar-section a {
+    display: block;
+    color: #bdc3c7;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-section a:hover {
+    color: #1abc9c;
+}
+
+/* Sidebar Toggle Button */
 .open-btn {
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
     background: #075d32;
     color: white;
     border: none;
@@ -74,11 +137,12 @@ nav a:hover{
     border-radius: 5px;
 }
 
-button:hover {
+.open-btn:hover {
     background-color: #343434;
     transform: scale(1.05);
 }
 
+/* Main Content and Footer */
 .container {
     display: flex;
     justify-content: center;
@@ -97,31 +161,16 @@ button:hover {
     font-weight: bold;
 }
 
-.sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    background: #222;
-    transition: 0.3s ease-in-out;
+footer {
+    background: #333;
     color: white;
-    padding: 20px;
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-.close-btn {
-    background: red;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
+/* Product Display Styles */
 .show-image-container {
     display: flex;
     flex-direction: column;
@@ -133,10 +182,12 @@ button:hover {
 .show-image {
     width: 500px;
     height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .show-name {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -145,6 +196,7 @@ button:hover {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #e74c3c;
 }
 
 .show-quantity-container {
@@ -161,20 +213,12 @@ button:hover {
     padding: 15px 30px;
     font-size: 20px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 17px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 17px;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin-top: 20px;
-    font-size: 18px;
+.js-add-to-cart:hover {
+    background-color: #054a28;
+    transform: scale(1.05);
 }
