@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel = "stylesheet" href = "login.css">
+</head>
+<body>
+        <div class="heroSection">
+                <div class="imageContainer">
+                    <img src = "./images/people.png">
+                </div>
+    
+            <div class="formContainer">
+                <fieldSet> <!-- This creates a border around the form -->
+                    <legend>Login</legend>
+                    <form class = "login-form">
+                
+                        <label for="Name">Name:</label>
+                        <input id = "username" class = "js-username" type = "Username" placeholder = "Enter your name"><br>
+                        <!-- <input id = "input" class = "js-username" type = "Username" placeholder = "Enter your name" required pattern = "/^[A-Za-z]+$/"><br> -->
+                        <label for="Email">Email:</label>
+                        <input type = "email" placeholder = "Enter your email"><br>
+                        <!-- <input type = "email" placeholder = "Enter your email" required pattern= "/^[A-Za-z]+$/"><br> -->
+                        <label for="Passowrd">Password:</label>
+                        <!-- <input type = "password" placeholder="Enter your password" required pattern = "/^[A-Za-z]+$/"><br> -->
+                        <input type = "password" placeholder="Enter your password"><br>
+                        <label for="Gender">Gender:</label>
+                        <input type = "radio" label for = "Male" class = "gender" required style="font-size: ">Male
+                        <input type = "radio" label for = "Female" class = "gender" required>Female<br>
+                        <button id = "submitBtn">Submit</button>
+                        <p id="errorText" style="color: red; display: none;">Username cannot contain special characters!</p>
+                    </form>
+                </fieldSet>
+            </div>
+        </div>
+    
+<script src ="login.js"></script>
+</body>
+</html>

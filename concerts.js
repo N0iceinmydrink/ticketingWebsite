@@ -40,7 +40,7 @@ shows.forEach((show)=>{
           </div>
 
           <div class="show-quantity-container">
-            <select>
+            <select style = "height: 35px; width: 38px; border-radius: 3px;">
               <option selected value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

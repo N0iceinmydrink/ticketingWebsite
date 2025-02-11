@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concert ticketing system</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="concerts.css">
 </head>
 <body>
     <header>
         <h1>Mosh station</h1>
+    
+
+        <nav>
+            <!-- Sidebar Button on the Left -->
+            <button class="open-btn" id = "open-btn">☰</button>
+
+            <!-- Centered Nav Links -->
+            <div class="nav-links">
+                <a href="concerts.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <!-- Cart on the Right -->
+            <a class="cart-link header-link cart-container" href="checkout.html">
+                <img class="cart-icon" src="images/cart.png">
+                <div class="cart-quantity js-cart-quantity">0</div>
+                <div class="cart-text">Cart</div>
+            </a>
+        </nav>
     </header>
-
-    <nav>
-        <!-- Sidebar Button on the Left -->
-        <button class="open-btn" id = "open-btn">☰</button>
-
-        <!-- Centered Nav Links -->
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contacts.html">Contacts</a>
-        </div>
-
-        <!-- Cart on the Right -->
-        <a class="cart-link header-link cart-container" href="checkout.html">
-            <img class="cart-icon" src="images/cart.png">
-            <div class="cart-quantity js-cart-quantity">0</div>
-            <div class="cart-text">Cart</div>
-        </a>
-    </nav>
 
     <div class="container">
         <div class="main-content js-main-content">
@@ -41,7 +42,7 @@
             <h2 class = "explore">Explore</h2>
             <div class = "sidebar-section">
                 <h3 class = "headers">Categories</h3>
-                <a href = "#">Concerts</a>
+                <a href = "concerts.html">Concerts</a>
                 <a href = "#">Artists</a>
                 <a href = "#">Genres</a>
             </div>
@@ -67,6 +68,6 @@
         <p>&copy; Music Shower. All rights reserved.</p>
     </footer>
 
-    <script type="module" src="index.js"></script>
+    <script type="module" src="concerts.js"></script>
 </body>
 </html>

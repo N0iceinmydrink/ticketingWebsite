@@ -130,7 +130,7 @@ nav a:hover {
     background: #075d32;
     color: white;
     border: none;
-    padding: 12px 18px;
+    padding: 8px 12px;
     font-size: 18px;
     cursor: pointer;
     z-index: 1000;
@@ -186,6 +186,11 @@ footer {
     border-radius: 10px;
 }
 
+.show-image:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
 .show-name {
     font-size: 22px;
     font-weight: bold;
@@ -203,6 +208,10 @@ footer {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.show-quantity-container{
+    height: px;
 }
 
 .js-add-to-cart {
