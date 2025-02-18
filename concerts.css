@@ -11,12 +11,21 @@ body {
     background-color: #f1f1f1;
 }
 
+.logoText{
+    font-weight: bold;
+    font-style: none;
+    font-size: 52px;
+    text-decoration: none;
+    color: white;
+}
+
 /* Header and Navigation Styling */
 header {
     background: #333;
     color: white;
     text-align: center;
     padding: 20px;
+    
 }
 
 nav {

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel = "stylesheet" href = "concerts.css"
 </head>
 <body>
     <h1>Mosh station</h1>
-    
 
     <nav>
         <!-- Sidebar Button on the Left -->
@@ -15,7 +15,7 @@
 
         <!-- Centered Nav Links -->
         <div class="nav-links">
-            <a href="concerts.html">Home</a>
+            <a href="concerts.html">Concerts</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="contacts.html">Contacts</a>
@@ -28,5 +28,41 @@
             <div class="cart-text">Cart</div>
         </a>
     </nav>
+    <div class="container">
+        <div class="main-content js-main-content">
+            <!-- Sidebar button moved to the nav bar, removed from here -->
+        </div>
+        
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" id = "close-btn">X</button>
+            <h2 class = "explore">Explore</h2>
+            <div class = "sidebar-section">
+                <h3 class = "headers">Categories</h3>
+                <a href = "concerts.html">Concerts</a>
+                <a href = "#">Artists</a>
+                <a href = "#">Genres</a>
+            </div>
+            <div class = "sidebar-section">
+                <h4 class = "headers">Payment options</h4>
+                <a href = "#">Esewa</a>
+                <a href = "#">Khalti</a>
+                <a href = "#">Bank</a>
+            </div>
+            <div class = "sidebar-section">
+                <h5 class = "headers">Follow us</h5>
+                <a href = "#">Facebook</a>
+                <a href = "#">Instagram</a>
+                <a href = "#">Twitter</a>
+            </div>
+            <div class="promo">
+                <p>Get 20% off on your first ticket purchase!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Music Shower. All rights reserved.</p>
+    </footer>
+
+    <script src = "home.js"></script>
 </body>
 </html>
